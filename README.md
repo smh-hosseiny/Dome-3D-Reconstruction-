@@ -37,6 +37,8 @@ We reconstructed the 3D model of some other domes:
 
 ## References
 <a id="1">[1]</a> 
-Jia, W., Yue, Y., Fernstrom, J. D., Zhang, Z., Yang, Y., & Sun, M.(2012). 
-3D Localization of Circular Feature in 2D Image and Application to Food Volume Estimation.
+W. Y. &. S. M. Jia, "3D Localization of Circular Feature in 2D Image and Application to Food Volume Estimation.," IEEE EMBS, 2012.
+
+<a id="2">[2]</a> 
+A. Z. Richard Hartley, "Multiple View Geometry in computer vision.," Cambridge University Press, 2003
 
