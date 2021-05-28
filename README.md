@@ -21,6 +21,7 @@ Specify the path to your image (you can use example images in images folder) and
 <img src="images/example1.jpg" width="280" height="320">
 
 Then locate some points (10-15 points is enough) on the borders of the dome.
+
 <img src="images/Capture.JPG" width ="560">
 
 
