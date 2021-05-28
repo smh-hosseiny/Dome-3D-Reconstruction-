@@ -1,5 +1,5 @@
 # Dome-3D-Reconstruction
-A Graphical User Interface (GUI) is employed to facilitate running the program. You can locate your image and the desired algorithm
+A Graphical User Interface (GUI) is employed to facilitate running the program. You can chooes your image and the desired algorithm
  to reconstruct the 3D model of a dome from a single image.
 
 ## GUI
