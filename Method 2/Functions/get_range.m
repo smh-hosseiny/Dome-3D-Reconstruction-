@@ -1,17 +1,14 @@
-function [lb, ub] = get_range(n, ang, y, Pbase, K, p1, nrow, dh, minf)
+function [lb, ub] = get_range(n, ang, y, Pbase, K, p1, nrow, dh)
 
 na = cross(n,[0;0;1])/norm(cross(n,[0;0;1]));
 Rna = axang2rotm([n' ang*pi/180]);
 na = Rna*na;
 Min = min(y);
 Max  = max(y);
-if nargin == 8
-    M = mean([nrow, Max]);
-else
-    M = minf;
-end
+
+
 lb = []; ub = [];
-for i = 1:1:100
+for i = 1:1:200
     circle(i).center = Pbase + (i-1)*dh*na;
     circle(i).normal = na;
     j = 0:360;
@@ -27,11 +24,10 @@ for i = 1:1:100
             break;
         end
     end
-    if floor(.97*Min) <= min(qcircle(2,:)) && min(qcircle(2,:)) <= round(1.2 * Min)
+    if floor(.96*Min) <= min(qcircle(2,:)) && min(qcircle(2,:)) <= round(2 * Min)
         ub = [ub, i];
     end    
-    if Max <= max(qcircle(2,:)) && max(qcircle(2,:)) < nrow ...
-         &&  max(qcircle(2,:)) <= M
+    if Max <= max(qcircle(2,:)) && max(qcircle(2,:)) < nrow && max(qcircle(2,:)) < 1.25*Max
         lb = [lb, i];
     end    
 end
