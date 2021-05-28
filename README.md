@@ -22,7 +22,7 @@ Specify the path to your image (you can use example images in images folder) and
 
 Then locate some points (10-15 points is enough) on the borders of the dome and press Enter. 
 
-<img src="images/Capture.jpg" width="280" height="320">
+<img src="images/Capture.JPG">
 
 
 ### Output
