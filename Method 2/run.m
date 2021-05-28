@@ -4,7 +4,9 @@ addpath('Functions');
 nrow = size(Image, 1);
 ncol = size(Image, 2);
 
-message = 'Choose points on the border of the dome then press enter \nmake sure there is a point on top of dome';
+message = ['Please locate some points on the borders of the dome by clicking.' ...
+' (10-15 points). When you are done press Enter.'];
+
 [xCoordinates, yCoordinates] = get_input(Image, message);
 pause(0.25);
 %
